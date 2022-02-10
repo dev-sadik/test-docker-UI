@@ -1,0 +1,42 @@
+.loader-main-div {
+    width: 100%;
+
+    height: 50vh; display: flex;
+
+    justify-content: center; align-items: center;
+
+    background-color: transparent;
+
+}
+
+.loader-center-div{
+
+    width: 50%;
+
+    height: calc(50vh - 25vh);
+
+    display: grid; place-items: center;
+
+}
+
+.loader-span{
+
+    width: 5rem; height: 5rem;
+
+    background-color: transparent;
+
+    border: 1ren solid ghostwhite; border-radius: 50%;
+
+    border-top: 1rem solid #AE498C;
+
+    animation: loaders 2s linear infinite;
+
+}
+@keyframes loaders {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform:  rotate(360deg);
+    }
+} 

@@ -1,0 +1,15 @@
+.forgotPasswordContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+.MuiTypography-root{
+    margin: 0.70em 5px !important;
+} 
+.MuiPaper-root{
+    width: 60vh;
+    min-height: 50vh;
+    padding: 0 8px;
+}
