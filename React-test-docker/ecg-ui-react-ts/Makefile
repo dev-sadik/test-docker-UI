@@ -12,11 +12,11 @@ config_node:
 install_typescript:
 	npm install -g typescript
 
-.PHONY: react_start
+.PHONY: react_build
 react_start: config_node			
 #inside folder
 	npm install
-	npm start
+	npm run build
 
 
 .PHONY: install_angular
