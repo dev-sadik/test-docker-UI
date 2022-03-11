@@ -14,7 +14,7 @@ install_typescript:
 	npm install -g typescript
 
 .PHONY: react_start
-react_start: 			
+react_start:config_node 			
 #inside folder
 	npm install
 	
