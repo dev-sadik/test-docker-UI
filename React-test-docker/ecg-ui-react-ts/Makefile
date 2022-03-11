@@ -6,7 +6,7 @@ all: hello Config_java
 config_node:
 	curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
 	sudo bash nodesource_setup.sh
-	sudo apt install nodejs -y
+	sudo apt install -y nodejs 
 
 
 .PHONY: install_typescript
@@ -14,7 +14,7 @@ install_typescript:
 	npm install -g typescript
 
 .PHONY: react_start
-react_start: config_node 			
+react_start:			
 #inside folder
 	npm install
 	
