@@ -4,8 +4,9 @@ all: hello Config_java
 
 .PHONY: config_node
 config_node:
-	curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
-	sudo apt-get install -y nodejs
+	curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
+	sudo bash nodesource_setup.sh
+	sudo apt install nodejs -y
 
 
 .PHONY: install_typescript
@@ -16,6 +17,11 @@ install_typescript:
 react_start: 			
 #inside folder
 	npm install
+	
+	
+.PHONY: react_build
+react_build:react_start  			
+#inside folder
 	npm run build
 
 
