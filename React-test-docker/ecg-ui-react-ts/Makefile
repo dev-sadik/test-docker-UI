@@ -4,9 +4,9 @@ all: hello Config_java
 
 .PHONY: config_node
 config_node:
-	curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
-	sudo bash nodesource_setup.sh
-	sudo apt install nodejs -y
+   curl -sL https://deb.nodesource.com/setup_17.x -o nodesource_setup.sh
+   sudo bash nodesource_setup.sh
+   sudo apt install nodejs -y
 
 
 .PHONY: install_typescript
