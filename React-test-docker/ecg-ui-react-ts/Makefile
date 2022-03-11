@@ -14,13 +14,13 @@ install_typescript:
 	npm install -g typescript
 
 .PHONY: react_start
-react_start:config_node 			
+react_start: config_node 			
 #inside folder
 	npm install
 	
 	
 .PHONY: react_build
-react_build:react_start  			
+react_build: react_start  			
 #inside folder
 	npm run build
 
