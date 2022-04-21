@@ -1,5 +1,5 @@
 export const Strings = {
-    baseUrl : 'http://localhost:8080/user/',
+    baseUrl : `http://${process.env.API_HOST}:8080/user/`,
 
     api: {
         login: 'login',
